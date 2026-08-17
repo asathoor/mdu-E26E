@@ -1,0 +1,29 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
