@@ -1,0 +1,51 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* farvepalette: fra billede af valdemar */
+:root {
+  --baggund: #e6e2e5ff;
+  --skrift: #5a4242ff;
+  --moerkere: #58576eff;
+  --stoevet: #d1c2c0ff;
+  --gylden: #aa7c5aff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--baggund);
+  color: var(--skrift);
+}
+
+/* layout */
+#wrap {
+  margin: auto;
+  width: 80vw;
+}
+
+header,
+footer {
+  background-color: var(--moerkere);
+  color: var(--stoevet);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--skrift);
+  color: var(--stoevet);
+  text-align: center;
+}
+
+nav a {
+  color: var(--baggund);
+}
