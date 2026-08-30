@@ -26,13 +26,6 @@
   box-sizing: border-box;
 }
 
-/* .flex : en class til containere, der skal vises som "kolonner" */
-.flex {
-  padding: 2%;
-  display:flex;
-  gap: 2rem;
-}
-
 /* Generelle indstillinger  */
 body {
   background-color: var(--baggrund); /* sådan bruges en CSS-variablel */
@@ -75,10 +68,54 @@ p {
   padding: 23px;
 }
 
-
-
 /*Logo skal ikke fylde 100% så derfor */
 #logo {
   width: 123px;
   height: auto; /* for at skalere korrekt */
+}
+
+/*-------------------------*/
+
+/* Responsive regler */
+
+/* BREAKPOINTS
+  Se: https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp 
+*/
+  /* Extra small devices (phones, 600px and down) */
+  /*@media only screen and (max-width: 600px) {...}*/
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /*@media only screen and (min-width: 600px) {...}*/
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  /*@media only screen and (min-width: 768px) {...}*/
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  /*@media only screen and (min-width: 992px) {...}*/
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  /*@media only screen and (min-width: 1200px) {...}*/
+
+ /* Jeg demonstrerer to breakpoints: extra small og laptops*/
+
+ /*-------------------------*/
+
+/* Designet fungerer allerede på mobile, så her er udtagelser til større skærme */
+@media only screen and (max-width: 600px) {
+  /* Vi får brug for at flex-klassen er defineret på små skærme  */
+  .flex {
+    padding: 2%;
+    display: block;
+    gap: 2rem;
+  }
+}
+
+/* Designet flexer til kolonner på større skærme. */
+@media only screen and (min-width: 992px) {
+  /* .flex : en "class" til containere, der skal vises som "kolonner" */
+  .flex {
+  padding: 2%;
+  display:flex;
+  gap: 2rem;
+  }
 }
