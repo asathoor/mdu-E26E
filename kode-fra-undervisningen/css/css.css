@@ -3,6 +3,22 @@
  * purpose: styling
  **/
 
+/* Fonte ("skrifttyper") placeres øverst */
+
+/* Farvepalette */
+/* Se: https://www.w3schools.com/css/css3_variables.asp */
+:root {
+  --tekst: #020202;
+  --baggrund: #cae6c3;
+  --kontrast1: #ff0;
+  --kontrast2: #0f0;
+  --kontrast3: #00f;
+  --kontrast4: #d0edff;
+  --kontrast5: #f00;
+  --pang: #fe3ae1; /* PANG!! eller - "Call to Action" */
+  --trasparent: #cae6c3a2;
+}
+
 /* Remove whitespace on top of certain browsers */
 * {
   margin: 0;
@@ -10,17 +26,48 @@
   box-sizing: border-box;
 }
 
-/* shift+option: 8/9 */
-body {
-  background-color: rgb(187, 255, 169);
+/* .flex : en class til containere, der skal vises som "kolonner" */
+.flex {
+  padding: 2%;
+  display:flex;
+  gap: 2rem;
 }
 
+/* Generelle indstillinger  */
+body {
+  background-color: var(--baggrund); /* sådan bruges en CSS-variablel */
+}
+
+header {
+  background-image: url('../images/kano-paa-gudenaaen.jpg');
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.titel {
+  position: relative;
+  /*top:50%;*/
+  background-color: var(--trasparent);
+  padding: 4%;
+}
+
+.titel h1 {
+  font-size: 3rem;
+}
+
+.titel h2 {
+  font-size: 2rem;
+}
+
+/* Billeder fylder 100% af den plads der er til rådighed - en fordel i responsivt design */
 img {
   width: 100%;
 }
 
 h1,
 h2 {
+  padding-top: 2rem;
   text-align: center;
 }
 
@@ -28,17 +75,10 @@ p {
   padding: 23px;
 }
 
-/* Use your variables on elements along these lines */
-/*
-:root {
-  --contrast: lime;
-  --backgr: #000;
+
+
+/*Logo skal ikke fylde 100% så derfor */
+#logo {
+  width: 123px;
+  height: auto; /* for at skalere korrekt */
 }
-
---- You can use the variables like this ---
-
- main {
-   color: var(--contrast);
-   background-color: var(--backgr);
- }
-*/

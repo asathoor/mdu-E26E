@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,48 +10,80 @@
   <!-- link til stylesheet -->
   <link rel="stylesheet" href="css/css.css">
 </head>
+
 <body>
   <!-- sidens indhold kommer her-->
 
+  <!-- Menu med logo til højre er en standard, der ofte forventes -->
+  <nav>
+    <!-- Logo -->
+    <img src="images/logo.png" alt="Højskolen Atterdag" id="logo">
+
+    <!--menu -->
+    <a href="#underviserne">Underviserne</a>
+    <a href="#">Lange kurser</a>
+    <a href="#">Korte kurser</a>
+  </nav>
+
   <!-- Vi begynder med headeren -->
   <header>
-    <h1>Højskolen Atterdag</h1>
-    <h2>Her oplever du noget</h2>
+
+    <!-- når noget skal placeres sammen skal det være i samme "container-element" -->
+    <!-- NB: baggrundsbilledet er sat ind via CSS. Så lægger teksten sig over billedet. -->
+    <article class="titel">
+      <h1>Højskolen Atterdag</h1>
+      <h2>Her oplever du noget</h2>
+    </article>
 
     <!-- sådan sættes billeder ind -->
-    <img src="images/valde.jpg" alt="Billede af Valdemar Atterdag.">
+    <!--img src="images/kano-paa-gudenaaen.jpg" alt="Akvarel: Isolde Saga- Kanoer på Gudenåen."-->
   </header>
 
   <main>
     <!-- Her kommer det vigtigste indhold -->
 
-    <!-- forstanderen EB -->
-     <article>
-      <img src="images/forstander-EigilBavnehoej.png" alt="Forstander Eigil Bavnehøj">
-      <h2>Forstander: Eigil Bavnehøj</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at voluptatem eligendi esse incidunt mollitia adipisci cupiditate minima. Repellat quos ipsam eius quam officiis iusto nulla natus neque accusantium sapiente.
-      </p>
-     </article>
+    <article id="underviserne">
+      <h2>Underviserne</h2>
+    </article>
 
-     <!-- Isolde underviser i billedkunst -->
-     <article>
-      <img src="images/isoldeSaga.png" alt="Billedkunst: Isolde Saga">
-      <h2>Billedkunst: Isolde Saga</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at voluptatem eligendi esse incidunt mollitia adipisci cupiditate minima. Repellat quos ipsam eius quam officiis iusto nulla natus neque accusantium sapiente.
-      </p>
-     </article>
 
-     <!-- forstanderen EB -->
-     <article>
-      <img src="images/MorganaLeFay.png" alt="Forstander Eigil Bavnehøj">
-      <h2>Avanceret borddækning: Morgana Le Fay</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at voluptatem eligendi esse incidunt mollitia adipisci cupiditate minima. Repellat quos ipsam eius quam officiis iusto nulla natus neque accusantium sapiente.
-      </p>
-     </article>
+    <div class="flex">
+      <!-- forstanderen EB -->
+      <article>
+        <img src="images/forstander-EigilBavnehoej.png" alt="Forstander Eigil Bavnehøj">
+        <h2>Forstander: Eigil Bavnehøj</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at voluptatem eligendi esse incidunt
+          mollitia adipisci cupiditate minima. Repellat quos ipsam eius quam officiis iusto nulla natus neque
+          accusantium
+          sapiente.
+        </p>
+      </article>
 
+      <!-- Isolde underviser i billedkunst -->
+      <article>
+        <img src="images/isoldeSaga.png" alt="Billedkunst: Isolde Saga">
+        <h2>Billedkunst: Isolde Saga</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at voluptatem eligendi esse incidunt
+          mollitia adipisci cupiditate minima. Repellat quos ipsam eius quam officiis iusto nulla natus neque
+          accusantium
+          sapiente.
+        </p>
+      </article>
+
+      <!-- forstanderen EB -->
+      <article>
+        <img src="images/MorganaLeFay.png" alt="Forstander Eigil Bavnehøj">
+        <h2>Avanceret borddækning: Morgana Le Fay</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at voluptatem eligendi esse incidunt
+          mollitia adipisci cupiditate minima. Repellat quos ipsam eius quam officiis iusto nulla natus neque
+          accusantium
+          sapiente.
+        </p>
+      </article>
+    </div>
   </main>
 
   <!-- her kommer footeren -->
@@ -59,15 +92,16 @@
     <!-- her lægger vi praktiske oplysninger -->
 
     <!-- Kontaktoplysniger -->
-     <article id="Kontaktoplysniger">
+    <article id="Kontaktoplysniger">
       Højskolen Atterdag <br>
       Tvedhøj 19 <br>
       8260 Brabrand <br>
       Tlf. 1234n 5678 (man. - tor. 8.00 - 16.00)
-     </article>
+    </article>
   </footer>
 
   <!-- sådan tilføjer du et JavaScript -->
   <script src="js/js.js"></script>
 </body>
+
 </html>
