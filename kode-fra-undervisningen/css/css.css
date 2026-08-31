@@ -11,10 +11,11 @@
   --tekst: #020202;
   --baggrund: #cae6c3;
   --kontrast1: #ff0;
-  --kontrast2: #0f0;
+  --kontrast2: rgb(252, 250, 248);
   --kontrast3: #00f;
   --kontrast4: #d0edff;
   --kontrast5: #f00;
+  --gammelrosa: #f2cfcf5e;
   --pang: #fe3ae1; /* PANG!! eller - "Call to Action" */
   --transparent: #cae6c3a2;
 }
@@ -29,6 +30,7 @@
 /* Generelle indstillinger  */
 body {
   background-color: var(--baggrund); /* sådan bruges en CSS-variablel */
+  color: var(--tekst);
 }
 
 header {
@@ -55,6 +57,29 @@ header {
   font-size: 2rem;
 }
 
+/* Styles til navigation */
+
+/* Sticky navigation ("topklistret") */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1; 
+  color: var(--kontrast2); 
+  /* color: er altid skriftens farve */
+  background-color: var(--tekst);
+}
+
+nav a {
+  color: var(--kontrast2);
+}
+
+/* Gør logoet mindre */
+nav a img {
+  height: 99px;
+  width: auto;
+}
+
+
 /* Billeder fylder 100% af den plads der er til rådighed - en fordel i responsivt design */
 img {
   width: 100%;
@@ -70,11 +95,12 @@ p {
   padding: 23px;
 }
 
-/*Logo skal ikke fylde 100% så derfor */
-#logo {
-  width: 123px;
-  height: auto; /* for at skalere korrekt */
+.flexdemo {
+  display: flex;
+  padding: 23px;
+  justify-content: space-around;
 }
+
 
 /*-------------------------*/
 
