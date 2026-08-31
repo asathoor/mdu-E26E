@@ -16,3 +16,5 @@ Og så er du i gang med din egen kode.
 ## Illustrationer
 
 De håndtegnede illustrationer er lavet af Per Thykjær Jensen til undervisningsbrug. Det er tilladt for studerende at bruge disse illustrationer i øvelser og eksperimenter. Kommerciel anvendelse er ikke tilladt.
+
+## Github demo
