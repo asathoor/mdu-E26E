@@ -1,0 +1,204 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Google fonts: importer fonte først */
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+
+/*
+Sådan anvendes fonten: 
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+*/
+
+/* Fonte ("skrifttyper") placeres øverst */
+
+/* Farvepalette */
+/* Se: https://www.w3schools.com/css/css3_variables.asp */
+/* Sæt de parametre, som du får brug for - DRY! */
+:root {
+  /* farvepalette */
+  --tekst: #020202;
+  --baggrund: #cae6c3;
+  --kontrast1: #ff0;
+  --kontrast2: rgb(252, 250, 248);
+  --kontrast3: #00f;
+  --kontrast4: #d0edff;
+  --kontrast5: #f00;
+  --gammelrosa: #f2cfcf5e;
+  --pang: #fe3ae1; /* PANG!! eller - "Call to Action" */
+  --transparent: #f3c2515c;
+
+  /* google fonts (displayfont til overskrifter */
+  --gooDisplay: "Slackey", sans-serif;
+  --gooVaegt: 400;
+  --gooStil: normal;
+
+  /* font: brødtekst (sans serif) */
+  --broedTekst: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  /* whitespace */
+  --whitespace: 23px;
+}
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Generelle indstillinger  */
+body {
+  background-color: var(--transparent); /* sådan bruges en CSS-variablel */
+  color: var(--tekst);
+  font-family: var(--broedTekst);
+  font-weight: 300;
+}
+
+header {
+  background-image: url('../images/kanoture.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+footer {
+  font-family: var(--broedTekst);
+  font-size: small;
+  background-color: var(--tekst);
+  color: var(--baggrund);
+  padding: var(--whitespace);
+}
+
+.titel {
+  position: relative;
+  /*top:50%;*/
+  background-color: var(--transparent);
+  padding: var(--whitespace);
+}
+
+.titel h1 {
+  font-family: var(--gooDisplay);
+  font-weight: var(--gooVaegt);
+  font-style: var(--gooStil);
+  font-size: 3rem;
+  padding-top: var(--whitespace);
+}
+
+.titel h2 {
+  font-size: 2rem;
+}
+
+/* Styles til navigation */
+
+/* Sticky navigation ("topklistret") */
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1; 
+  color: var(--kontrast2); 
+  /* color: er altid skriftens farve */
+  background-color: var(--tekst);
+}
+
+nav a {
+  color: var(--kontrast2);
+  /* Hvordan fjerner man stregen under linket? Prøv! */
+}
+
+/* Gør logoet mindre */
+nav a img {
+  height: 99px;
+  width: auto;
+}
+
+
+/* Billeder fylder 100% af den plads der er til rådighed - en fordel i responsivt design */
+img {
+  width: 100%;
+  height:auto;
+}
+
+/* Portrætter af undervisere */
+.portraet {
+  height: 400px;
+  width: auto;
+}
+
+/* Centrer noget tekst */
+.centrer {
+  text-align: center;
+}
+
+h1,
+h2 {
+  padding: var(--whitespace);
+  text-align: center;
+}
+
+p {
+
+}
+
+.flexdemo {
+  display: flex;
+  padding: var(--whitespace);
+  justify-content: space-around;
+  gap: 20px;
+
+}
+
+
+/*-------------------------*/
+
+/* Responsive regler */
+
+/* BREAKPOINTS
+  Se: https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp 
+*/
+  /* Extra small devices (phones, 600px and down) */
+  /*@media only screen and (max-width: 600px) {...}*/
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /*@media only screen and (min-width: 600px) {...}*/
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  /*@media only screen and (min-width: 768px) {...}*/
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  /*@media only screen and (min-width: 992px) {...}*/
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  /*@media only screen and (min-width: 1200px) {...}*/
+
+ /* Jeg demonstrerer to breakpoints: extra small og laptops*/
+
+ /*-------------------------*/
+
+/* Designet fungerer allerede på mobile, så her er udtagelser til større skærme */
+@media only screen and (max-width: 600px) {
+  /* Vi får brug for at flex-klassen er defineret på små skærme  */
+  .flex {
+    padding: 2%;
+    display: block;
+    gap: 2rem;
+  }
+}
+
+/* Designet flexer til kolonner på større skærme. */
+@media only screen and (min-width: 992px) {
+  /* .flex : en "class" til containere, der skal vises som "kolonner" */
+  .flex {
+  padding: 2%;
+  display:flex;
+  gap: 2rem;
+  }
+}
