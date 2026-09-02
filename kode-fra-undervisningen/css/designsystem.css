@@ -1,0 +1,41 @@
+/**
+ * fil: designsystem.css
+ * formål: styler selve designsystemet
+ **/
+
+/* firkanter til farverne */
+.farvebox {
+    width: 75vw;
+    height: 175px;
+    margin: auto;
+    background-color: aqua;
+    border: 5px solid black;
+}
+
+body {
+    font-family: var(--broedTekst);
+    background-color: var(--baggrund);
+}
+
+/* Farvepaletten */
+#farve1 {
+    background-color: var(--tekst);
+}
+
+#farve2 {
+    background-color: var(--baggrund);
+}
+
+#farve3 {
+    background-color: var(--kontrast5);
+}
+/* og så videre */
+
+h1,
+h2,
+h3 {
+    font-family: var(--gooDisplay);
+    font-weight: var(--gooVaegt);
+    font-style: normal;
+}
+

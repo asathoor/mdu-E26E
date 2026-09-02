@@ -34,3 +34,8 @@ Indeholder projektets stylesheet. En webside kan bruge et eller flere stylesheet
 
 En webside kan bruge et eller flere JavaScripts. Dette script sender en besked i baggrunden til konsollen om at det er der. JavaScripts kan gøre netsider dynamiske. På første semester arbejdeer vi primært med scripts, der reagerer på brugerens klik og lignende. Det er en standard at JavaScript-filer har efternavnet `.js`
 
+----
+
+# HTML Designsystem
+
+Her arbejder vi med at vise eksempler på vores layout og design ved hjælp af HTML og CSS. Designsystemet skal vise eksempler på, hvordan dit design ser ud. HTML Designsystemet bruges senere, når du skal udvikle flere sider, cards eller andet indhold.
