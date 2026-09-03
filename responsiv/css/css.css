@@ -1,0 +1,76 @@
+/**
+ * fil: ./css/css.css
+ **/
+:root {
+    --baggrund:blanchedalmond;
+}
+
+ body {
+    background-color: var(--baggrund);
+ }
+
+.bil {
+    border: 1px solid red;
+    width: 500px;
+    height: 127px;
+}
+
+ /* denne klasse flexer */
+ .hund {
+    display: flex;
+    gap: 33px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+
+ /* RESPONSIVE REGLER */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+        background: var(--baggrund);
+        font-size: xx-large;
+    }
+    button {
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    .hund {
+        display: flex;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {background: blue;}
+  .hund {
+    display: block;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {background: orange;}
+  .hund {
+    display: block;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {background: pink;}
+  .hund {
+    display: block;
+  }
+}
