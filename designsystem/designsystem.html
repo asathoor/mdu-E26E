@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Designsystem: Landingpage</title>
-  
+
   <!-- css fra din produktion -->
   <link rel="stylesheet" href="css/css.css">
 
   <!-- særligt css til designsystemet -->
   <link rel="stylesheet" href="css/designsystem.css">
 </head>
+
 <body>
-    <!-- navigationen places hvor det er hensigtsmæssigt -->
-    <nav>
+  <!-- navigationen places hvor det er hensigtsmæssigt -->
+
+  <hr>
+  <h2>Navigation</h2>
+
+  <nav>
     <!-- logo -->
     <a href="index.html">
       <img src="images/logo.png" alt="Logo: Højskolen Atterdag">
     </a>
 
     <!-- nogen links her -->
-     <a href="https://www.dr.dk/">
+    <a href="https://www.dr.dk/">
       Danmarks radio
-     </a>
-     <a href="https://multimusen.dk">Multimusen</a>
+    </a>
+    <a href="https://multimusen.dk">Multimusen</a>
 
-     <a href="#hop">Hop lidt</a>
-     <a href="#nyeKurser">Nye kurser</a>
+    <a href="#hop">Hop lidt</a>
+    <a href="#nyeKurser">Nye kurser</a>
 
   </nav>
+
+  <hr>
+  <h2>Header med hero-image</h2>
 
   <!-- headersektionen: formatteres fx som herosektion -->
   <header>
@@ -37,14 +46,18 @@
     <h2>Case: "Højskolen Atterdag"</h2>
   </header>
 
+  <hr>
+  <h2>Main</h2>
+
   <!-- main: giv indholdet en max-bredde pga. læsbarhed -->
   <main>
 
     <hr>
-    <h3>Sådan gør du</h3>
+    <h3>(h3) Sådan gør du</h3>
 
     <p>
-      Kopier eksempler på din markup (htMl) ind i denne fil. Husk at koden skal ligge præcis som i din egen fil, således at id og classes er formatteret korret.
+      Kopier eksempler på din markup (htMl) ind i denne fil. Husk at koden skal ligge præcis som i din egen fil, således
+      at id og classes er formatteret korret.
     </p>
     <p>
       Hvis noget css falder uheldigt ud, så skal den rettes i denne fil:
@@ -70,11 +83,11 @@
 
     <!-- Typografi: fonte i kontekst -->
     <section id="typografi">
-
+      <hr>
       <h2>Typografi</h2>
 
       <aside>
-        <!-- vi reserverer h1 til sitetitel -->
+        <h1>h1 (Reserveret til sitets titel)</h1>
         <h2>h2: Overskrifter</h2>
         <h3>h3: Lorem ipsum</h3>
         <h4>h4: Lorem ipsum</h4>
@@ -82,28 +95,38 @@
         <h6>h6: Lorem ipsum</h6>
       </aside>
 
+
+
       <aside id="broedtekst">
+        <hr>
         <h2>Brødtekst &lt;p&gt;</h2>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga aliquid quod quasi excepturi adipisci. Facilis accusantium sed itaque asperiores labore inventore, praesentium culpa, voluptatibus facere deleniti officia necessitatibus ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga aliquid quod quasi excepturi
+          adipisci. Facilis accusantium sed itaque asperiores labore inventore, praesentium culpa, voluptatibus facere
+          deleniti officia necessitatibus ex.</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae dolorum numquam quaerat totam consequuntur esse quisquam temporibus modi delectus adipisci illum veniam omnis officia ipsam nostrum, facere iste. Labore!</p>
-       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae dolorum numquam quaerat totam
+          consequuntur esse quisquam temporibus modi delectus adipisci illum veniam omnis officia ipsam nostrum, facere
+          iste. Labore!</p>
 
-      <aside id="links">
-        <h2>Links</h2>
-        <!-- links: husk at give en :hover -->
-        <a href="#">Her er et link</a>
-      </aside>
+
+        <aside id="links">
+          <hr>
+          <h2>Links</h2>
+          <!-- links: husk at give en :hover -->
+          <a href="#">Her er et link</a>
+        </aside>
 
     </section>
-    
+
     <section id="diverse">
 
+      <hr>
       <h2>Øvrige elementer</h2>
 
       <p>
-        Du får selvfølgelig ikke brug for alle HTML-elementer; men de tags, som faktisk bruges i din produktion skal styles på en eller anden led med css. Her er en liste med samtlige html elementer:
+        Du får selvfølgelig ikke brug for alle HTML-elementer; men de tags, som faktisk bruges i din produktion skal
+        styles på en eller anden led med css. Her er en liste med samtlige html elementer:
       </p>
 
       <ul>
@@ -111,6 +134,7 @@
       </ul>
   </main>
 
+  <h2>Footer</h2>
   <!-- footer -->
   <footer>
     &copy; Jensen, 2025
@@ -118,4 +142,5 @@
 
   <script src="js/js.js"></script>
 </body>
+
 </html>

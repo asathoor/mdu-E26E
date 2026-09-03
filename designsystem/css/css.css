@@ -67,6 +67,10 @@ header {
   height: 100vh;
 }
 
+main {
+  padding: var(--whitespace);
+}
+
 footer {
   font-family: var(--broedTekst);
   font-size: small;
@@ -145,7 +149,8 @@ h2 {
 }
 
 p {
-
+  max-width: 54ch;
+  font-family: var(--broedTekst);
 }
 
 .flexdemo {
