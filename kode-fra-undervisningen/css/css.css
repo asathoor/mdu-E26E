@@ -186,7 +186,7 @@ p {
 /* Designet fungerer allerede på mobile, så her er udtagelser til større skærme */
 @media only screen and (max-width: 600px) {
   /* Vi får brug for at flex-klassen er defineret på små skærme  */
-  .flex {
+  .flexdemo {
     padding: 2%;
     display: block;
     gap: 2rem;
@@ -196,7 +196,7 @@ p {
 /* Designet flexer til kolonner på større skærme. */
 @media only screen and (min-width: 992px) {
   /* .flex : en "class" til containere, der skal vises som "kolonner" */
-  .flex {
+  .flexdemo {
   padding: 2%;
   display:flex;
   gap: 2rem;
