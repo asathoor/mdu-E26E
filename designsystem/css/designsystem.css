@@ -5,8 +5,8 @@
 
 /* firkanter til farverne */
 .farvebox {
-    width: 75vw;
-    height: 175px;
+    width: 75px;
+    height: 75px;
     margin: auto;
     background-color: aqua;
     border: 5px solid black;
