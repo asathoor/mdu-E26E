@@ -15,7 +15,25 @@
 </head>
 
 <body>
-  <!-- navigationen places hvor det er hensigtsmæssigt -->
+  
+  <!-- Introduktion -->
+  <article>
+    <h1>HTML Designsystem</h1>
+    <h2>for: Højskolen Atterdag</h2>
+  </article>
+  
+    <!-- din farvepalette -->
+    <section id="farver">
+      <h2> Farvepalette </h2>
+
+      <article class="palette">
+        <aside class="farvebox" id="farve1"></aside>
+        <aside class="farvebox" id="farve2"></aside>
+        <aside class="farvebox" id="farve3"></aside>
+        <aside class="farvebox" id="farve4"></aside>
+      </article>
+    </section>
+
 
   <hr>
   <h2>Navigation</h2>
@@ -67,19 +85,6 @@
     </pre>
     <hr>
 
-    <!-- din farvepalette -->
-    <section id="farver">
-      <h2> Farvepalette </h2>
-
-      <p>Vis alle jeres farver i firkanter eller som cirkler.</p>
-
-      <article class="palette">
-        <aside class="farvebox" id="farve1"></aside>
-        <aside class="farvebox" id="farve2"></aside>
-        <aside class="farvebox" id="farve3"></aside>
-        <aside class="farvebox" id="farve4"></aside>
-      </article>
-    </section>
 
     <!-- Typografi: fonte i kontekst -->
     <section id="typografi">
@@ -127,9 +132,17 @@
       <hr>
       <h2>Øvrige elementer</h2>
 
+      <h3>Skal alle html-tags vises?</h3>
       <p>
-        Du får selvfølgelig ikke brug for alle HTML-elementer; men de tags, som faktisk bruges i din produktion skal
-        styles på en eller anden led med css. Her er en liste med samtlige html elementer:
+        Du får selvfølgelig ikke brug for alle HTML-elementer som findes i HTML5; men du skal demonstrere de udvalgte html-elementer, som faktisk bruges i din løsning.
+      </p>
+
+      <h3>Komponenter</h3>
+      <p>
+        Komponenter er fx kolonner med cards og lignende kompositioner. Dine komponenter, dvs. cards og lignende bør også vises. 
+      </p>
+      <p>
+        Fordi du bruger HTML og CSS vil du samtidig kunne se, hvordan komponenterne opfører sig responsivt. 
       </p>
 
       <ul>
@@ -143,7 +156,14 @@
   <h2>Footer</h2>
   <!-- footer -->
   <footer>
-    &copy; Jensen, 2025
+
+    <!-- eksempel på en tag, som burde indgå i din footer -->
+    <address>
+      Højskolen Atterdag <br>
+      Paradisæblevej 123 <br>
+      8260 Viby J <br>
+      tlf. 1234 5678
+    </address>
   </footer>
 
   <script src="js/js.js"></script>
