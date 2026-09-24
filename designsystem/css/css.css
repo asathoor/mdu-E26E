@@ -151,6 +151,7 @@ h2 {
 p {
   max-width: 54ch;
   font-family: var(--broedTekst);
+  font-size: large;
 }
 
 .flexdemo {
