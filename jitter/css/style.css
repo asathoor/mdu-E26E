@@ -7,6 +7,13 @@
     --vand: rgb(194, 222, 242);
 }
 
+/* Skjuler scrollbaren for neden i browseren  */
+html,
+body {
+  margin: 0;
+  overflow-x: clip;
+}
+
 body {
     background-color: var(--vand);
 }
@@ -15,18 +22,12 @@ p {
     width: 53ch;
 }
 
-/* CSS-animation af Jitter-kassen */
-
-/*
-#jitter-container {
-    animation: flyv-over-vinduet 5s linear forwards;
-}
-*/
-
+/* Vi laver en class, som kan animere noget  */
 .svoem {
-   animation: flyv-over-vinduet 8s linear forwards;
+   animation: flyv-over-vinduet 8s linear infinite;
 }
 
+/* CSS animation  */
 @keyframes flyv-over-vinduet {
     from {
         //transform: translate(-50vw);
