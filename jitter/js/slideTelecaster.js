@@ -7,6 +7,13 @@
   const knap = document.getElementById("startLyd");
 
   knap.addEventListener("click", () => {
-    lyd.play();
-    knap.style.display = "none";
+    //lyd.play();
+    //knap.style.display = "none";
+    if (lyd.paused) {
+      lyd.play();
+      knap.textContent = "Silentio";
+    } else {
+      lyd.pause();
+      knap.textContent = "Slide-larm";
+    }
   });

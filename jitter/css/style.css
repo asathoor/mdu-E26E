@@ -21,16 +21,21 @@ p {
 #jitter-container {
     animation: flyv-over-vinduet 5s linear forwards;
 }
+*/
+
+.svoem {
+   animation: flyv-over-vinduet 8s linear forwards;
+}
 
 @keyframes flyv-over-vinduet {
     from {
-        transform: translate(-120vw);
+        //transform: translate(-50vw);
+        //ved ikke at angive en position starter fisken, hvor den er ...
     }
 
     to {
-        transform: translate(120vw);
-    }
-    
+        transform: translate(150vw); // fisken svømmer uden for skærmen her.
+    }   
 }
-*/
+
 
