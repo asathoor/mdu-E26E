@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitter: animation og JavaScript</title>
+
+    <!-- stylesheets -->
+     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Load CDN script fra Cloudflare -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+
+</head>
+<body>
+    <h1>Jitter animation</h1>
+
+    <!-- Her kommer containeren med animationen -->
+    <figure id="jitter-container"></figure>
+
+    <!-- Knapper: styrer animationen -->
+    <button id="play-btn">Spil</button>
+    <button id="pause-btn">Pause</button>
+    <button id="stop-btn">Stop</button>
+
+    <!-- Lyd -->
+    
+        <button id="startLyd">Larm</button>
+
+        <audio id="baggrundslyd" loop>
+            <source src="lyd/slideTelecaster.mp3" type="audio/mpeg">
+        </audio>
+
+
+    <!-- Load dit Script nederst på siden - så er alle elementer indlæst -->
+
+    <!-- Lottie: script -->
+    <script src="js/jitterAnimation.js"></script>
+    
+    <!-- Lyd: sript -->
+    <script src="js/slideTelecaster.js"></script>
+</body>
+</html>

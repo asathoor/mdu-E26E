@@ -1,0 +1,12 @@
+/**
+ * fil: style.css
+ * for: loop-demo.html
+ **/
+
+ body {
+    background-color: ghostwhite;
+ }
+
+ li {
+   color: rgb(155, 66, 146);
+ }

@@ -1,0 +1,36 @@
+/**
+* fil: style.css
+**/
+
+/* farvepalette */
+:root {
+    --vand: rgb(194, 222, 242);
+}
+
+body {
+    background-color: var(--vand);
+}
+
+p {
+    width: 53ch;
+}
+
+/* CSS-animation af Jitter-kassen */
+
+/*
+#jitter-container {
+    animation: flyv-over-vinduet 5s linear forwards;
+}
+
+@keyframes flyv-over-vinduet {
+    from {
+        transform: translate(-120vw);
+    }
+
+    to {
+        transform: translate(120vw);
+    }
+    
+}
+*/
+
