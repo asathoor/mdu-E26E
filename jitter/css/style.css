@@ -22,10 +22,13 @@ p {
     width: 53ch;
 }
 
+
 /* Vi laver en class, som kan animere noget  */
+
 .svoem {
    animation: flyv-over-vinduet 8s linear infinite;
 }
+
 
 /* CSS animation  */
 @keyframes flyv-over-vinduet {
