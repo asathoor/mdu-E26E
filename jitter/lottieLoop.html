@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>25 tilfældige animationer</title>
+
+    <style>
+        /* Hele skærmen bruges som område */
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #071a21;
+            background: linear-gradient(35deg, rgba(7, 26, 33, 1) 0%, rgba(87, 91, 199, 1) 40%, rgba(255, 251, 201, 1) 100%);
+        }
+
+        /* Dette område fylder hele vinduet */
+        #animationer {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* Hver animation får sin egen boks */
+        .animation {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            animation: svoem 20s linear infinite;
+            animation-iteration-count: infinite;
+        }
+
+        /* Animation til .animation  */
+        @keyframes svoem {
+            from {
+                transform: translateX(-50vw);
+            }
+
+            to {
+                transform: translateX(calc(100vw + 120px));
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Her bliver de 25 animationer placeret -->
+    <div id="animationer"></div>
+
+    <!-- Lottie-biblioteket gør det muligt at vise JSON-animationen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+    <script>
+        // Vi finder det område, hvor animationerne skal placeres
+        const animationsOmraade = document.getElementById("animationer");
+
+        // Vi vil oprette mindst 10+ animationer
+        //const antalAnimationer = 25;
+        let antalAnimationer = Math.floor(Math.random() * 45) + 1;
+
+
+
+        // Denne løkke kører 25 gange
+        for (let nummer = 0; nummer < antalAnimationer; nummer++) {
+
+            // Opret en ny HTML-div til animationen
+            const animationContainer = document.createElement("div");
+
+            // Giv div'en CSS-klassen "animation"
+            animationContainer.classList.add("animation");
+
+            /*
+              Lav en tilfældig placering.
+      
+              100 betyder hele skærmens bredde/højde.
+              Vi trækker 120 fra, fordi animationen er 120 px bred og høj.
+              Det hjælper med at holde animationen inden for skærmen.
+            */
+            const tilfældigX = Math.random() * (window.innerWidth - 120);
+            const tilfældigY = Math.random() * (window.innerHeight - 120);
+
+            // Placer animationen på den tilfældige position
+            animationContainer.style.left = tilfældigX + "px";
+            animationContainer.style.top = tilfældigY + "px";
+            //animationContainer.style.border = "1px solid red";
+
+            // Tilføj containeren til hjemmesiden
+            animationsOmraade.appendChild(animationContainer);
+
+            /*
+              Indlæs jitterFrame.json i containeren.
+              Alle animationer bruger den samme JSON-fil.
+            */
+            lottie.loadAnimation({
+                container: animationContainer,
+
+                // Brug SVG til at vise animationen
+                renderer: "svg",
+
+                // Start animationen automatisk
+                autoplay: true,
+
+                // Gentag animationen for evigt
+                loop: true,
+
+                //  stiten til din lottie json fra index.html
+                path: "billeder/jitterframe.json"
+            });
+        }
+    </script>
+
+</body>
+
+</html>

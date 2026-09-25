@@ -20,7 +20,7 @@ const animation = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: '../billeder/jitterframe.json' // Stien til din jitter-json fil
+  path: 'billeder/jitterframe.json' // Stien til din jitter-json fil
 });
 
 // sæt størrelsen på din lottie
@@ -53,7 +53,11 @@ container.style.height = '250px';
    */
   container.addEventListener("click", 
       function(){ 
+        /**
+         * classlist: tilføjer eller fjerner classes - fx her en animation
+         * #info: her lægges noget tekst ind i en faktabox
+         */
         container.classList.toggle("svoem");
-        info.innerHTML = "Nu skal du bare høre ...";
+        info.innerHTML = "Klik på fisken, så holder den op med at svømme.";
       }
     );
