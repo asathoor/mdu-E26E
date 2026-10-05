@@ -2,4 +2,5 @@
 
 * grøn
 * blå
-* gammelrosa
+* kamelgul
+* safrangrøn
