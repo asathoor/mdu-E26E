@@ -2,3 +2,5 @@
 
 * rød
 * blå
+* kamelgul
+* safrangrøn
