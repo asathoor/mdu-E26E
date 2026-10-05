@@ -1,0 +1,4 @@
+# Konflikten
+
+* rød
+* blå
