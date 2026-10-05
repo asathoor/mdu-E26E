@@ -1,4 +1,5 @@
 # Konflikten
 
-* rød
+* grøn
 * blå
+* gammelrosa
