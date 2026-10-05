@@ -1,0 +1,19 @@
+/**
+ * fil: css/style.css
+ * formål: styler demo af funktion
+ **/
+
+ .prodImg img {
+    width: 100%;
+    height: auto;
+ }
+
+ .prodCard {
+    width: 455px;
+    border: 1px dotted grey;
+    padding: 23px;
+ }
+
+ .flex {
+    display: flex;
+ }
